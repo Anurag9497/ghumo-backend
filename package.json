@@ -11,7 +11,7 @@
     "start": "npm run build && node ./build/server.js",
     "build": "npm run clean && npm run babel-build",
     "babel-build": "babel -d ./build ./src -s",
-    "clean": " del /s /f build && mkdir build",
+    "clean": " rm -rf build && mkdir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anurag Thakur",
