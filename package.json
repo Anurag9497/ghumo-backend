@@ -1,11 +1,14 @@
 {
   "name": "ghumo-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "15.x"
+  },
   "description": "This repo is about developing backend app support for already existing repo named ghumo. This backend is developed using Node JS, Express JS, Mongo DB etc.",
   "main": "server.js",
   "scripts": {
     "start-dev": "nodemon --exec babel-node server.js",
-    "start": "npm run build && nodemon ./build/server.js",
+    "start": "npm run build && node ./build/server.js",
     "build": "npm run clean && npm run babel-build",
     "babel-build": "babel -d ./build ./src -s",
     "clean": " if exist rmdir /s build && mkdir build",
