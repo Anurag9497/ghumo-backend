@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import './database';
 import express from 'express';
-import crouselRoute from './src/routes/crouselRoute';
+import crouselRoute from './routes/crouselRoute';
 import cors from 'cors';
 
 
