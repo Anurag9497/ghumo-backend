@@ -1,11 +1,11 @@
 {
   "name": "ghumo-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repo is about developing backend app support for already existing repo named ghumo. This backend is developed using Node JS, Express JS, Mongo DB etc.",
   "main": "server.js",
   "scripts": {
     "start-dev": "nodemon --exec babel-node server.js",
-    "start": "npm run build && node ./build/server.js",
+    "start": "npm run build && nodemon ./build/server.js",
     "build": "npm run clean && npm run babel-build",
     "babel-build": "babel -d ./build ./src -s",
     "clean": " if exist rmdir /s build && mkdir build",
@@ -26,5 +26,13 @@
     "mongodb": "^3.6.5",
     "mongoose": "^5.12.2",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anurag9497/ghumo-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Anurag9497/ghumo-backend/issues"
+  },
+  "homepage": "https://github.com/Anurag9497/ghumo-backend#readme"
 }
